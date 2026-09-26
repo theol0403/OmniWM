@@ -206,6 +206,95 @@ final class WorkspaceBarHoverPreviewTests: XCTestCase {
         XCTAssertNil(controller.visibleTarget)
     }
 
+    func testPendingHoverFollowsLocalReflowBeforeOpeningAndCancelsWhenRemoved() {
+        let driver = OverviewPreviewTestDriver()
+        let scheduler = ManualScheduler()
+        let controller = makeController(driver: driver, scheduler: scheduler, hasCaptureAccess: false)
+        let hovered = target([20])
+        let interaction = WorkspaceBarIslandInteraction()
+        interaction.update(hovered.key, frame: hovered.anchor)
+        connectGeometry(interaction, to: controller, target: hovered)
+
+        controller.hoverBegan(hovered)
+        let movedFrame = hovered.anchor.offsetBy(dx: 40, dy: 0)
+        interaction.update(hovered.key, frame: movedFrame)
+        scheduler.fireLatest()
+        XCTAssertEqual(controller.visibleTarget?.anchor, movedFrame)
+
+        controller.dismiss()
+        controller.hoverBegan(hovered)
+        interaction.remove(hovered.key, reportedFrame: hovered.anchor)
+        XCTAssertEqual(scheduler.liveDelays, [WorkspaceBarHoverPreviewController.openDelay])
+        interaction.remove(hovered.key, reportedFrame: movedFrame)
+        XCTAssertTrue(scheduler.liveDelays.isEmpty)
+        scheduler.fireLatest()
+        XCTAssertNil(controller.visibleTarget)
+    }
+
+    func testPanelTranslationDismissesVisibleHoverWithoutLocalReflow() {
+        let driver = OverviewPreviewTestDriver()
+        let scheduler = ManualScheduler()
+        let controller = makeController(driver: driver, scheduler: scheduler, hasCaptureAccess: false)
+        let hovered = target([21])
+        let interaction = WorkspaceBarIslandInteraction()
+        interaction.update(hovered.key, frame: hovered.anchor)
+        var screenOffset = CGPoint.zero
+        connectGeometry(interaction, to: controller, target: hovered) { screenOffset }
+
+        controller.hoverBegan(hovered)
+        scheduler.fireLatest()
+        interaction.update(.scratchpad(1), frame: CGRect(x: 0, y: 0, width: 24, height: 24))
+        XCTAssertEqual(controller.visibleTarget, hovered, "Unrelated reflow must preserve the preview")
+
+        screenOffset.x = 60
+        interaction.panelFrameDidChange()
+        XCTAssertEqual(interaction.frames[hovered.key], hovered.anchor)
+        XCTAssertNil(controller.visibleTarget)
+    }
+
+    func testManagerRefreshesHoverTargetsForLocalAndNativeGeometryChanges() {
+        let driver = OverviewPreviewTestDriver()
+        let scheduler = ManualScheduler()
+        let controller = makeController(driver: driver, scheduler: scheduler, hasCaptureAccess: false)
+        let manager = WorkspaceBarManager(motionPolicy: MotionPolicy(animationsEnabled: false))
+        manager.hoverPreview = controller
+        let panel = WorkspaceBarPanel.defaultPanel()
+        defer { panel.close() }
+        let interaction = manager.makeIslandInteraction(panel: panel, monitorId: Monitor.ID(displayId: 1))
+        let hovered = target([22])
+
+        controller.hoverBegan(hovered)
+        interaction.update(hovered.key, frame: hovered.anchor)
+        XCTAssertTrue(scheduler.liveDelays.isEmpty, "A target no longer represented by a bar must be cancelled")
+
+        controller.hoverBegan(hovered)
+        scheduler.fireLatest()
+        XCTAssertEqual(controller.visibleTarget, hovered)
+        interaction.panelFrameDidChange()
+        XCTAssertNil(controller.visibleTarget)
+    }
+
+    private func connectGeometry(
+        _ interaction: WorkspaceBarIslandInteraction,
+        to controller: WorkspaceBarHoverPreviewController,
+        target: WorkspaceBarHoverTarget,
+        screenOffset: @escaping () -> CGPoint = { .zero }
+    ) {
+        interaction.onGeometryChange = { [weak interaction] in
+            controller.targetsDidChange { key in
+                guard key == target.key, let frame = interaction?.frames[key] else { return nil }
+                let offset = screenOffset()
+                return WorkspaceBarHoverTarget(
+                    key: key,
+                    windows: target.windows,
+                    anchor: frame.offsetBy(dx: offset.x, dy: offset.y),
+                    visibleFrame: target.visibleFrame,
+                    level: target.level
+                )
+            }
+        }
+    }
+
     func testPanelIsClickableOnlyForGroupedPreviews() throws {
         let registry = OwnedWindowRegistry()
         let panel = WorkspaceBarPreviewPanel(ownedWindowRegistry: registry)

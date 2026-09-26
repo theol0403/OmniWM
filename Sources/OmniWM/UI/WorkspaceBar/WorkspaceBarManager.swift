@@ -134,9 +134,7 @@ final class WorkspaceBarManager {
             removeBarForMonitor(monitorId)
         }
         dragController.barsDidUpdate()
-        hoverPreview?.targetsDidChange { [weak self] key in
-            self?.hoverTarget(for: key)
-        }
+        refreshHoverPreviewTargets()
     }
 
     func updateAppearance() {

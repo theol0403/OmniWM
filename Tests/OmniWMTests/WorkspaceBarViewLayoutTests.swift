@@ -271,9 +271,28 @@ final class WorkspaceBarViewLayoutTests: XCTestCase {
         XCTAssertEqual(widths[2].height, widths[0].height, accuracy: 0.5)
     }
 
-    func testWorkspaceLabelsKeepIntrinsicWidthUnderNarrowProposal() {
+    func testWorkspaceLabelsKeepIntrinsicWidthUnderNarrowProposal() throws {
         let proposalWidth: CGFloat = 40
         let barHeight: CGFloat = 24
+
+        func labelPixels<V: View>(_ view: V, canvasWidth: CGFloat) throws -> Set<Int> {
+            let renderer = ImageRenderer(content: view.frame(
+                width: canvasWidth, height: barHeight, alignment: .leading
+            ))
+            renderer.scale = 2
+            let bitmap = NSBitmapImageRep(cgImage: try XCTUnwrap(renderer.cgImage))
+            var pixels = Set<Int>()
+            for y in 0 ..< bitmap.pixelsHigh {
+                for x in 0 ..< bitmap.pixelsWide {
+                    guard let color = bitmap.colorAt(x: x, y: y)?.usingColorSpace(.deviceRGB),
+                          color.alphaComponent > 0.9, color.redComponent > 0.8,
+                          color.greenComponent < 0.2, color.blueComponent < 0.2
+                    else { continue }
+                    pixels.insert(y * bitmap.pixelsWide + x)
+                }
+            }
+            return pixels
+        }
 
         for (name, windowCount) in [
             ("Sync", 1),
@@ -320,36 +339,52 @@ final class WorkspaceBarViewLayoutTests: XCTestCase {
                 showLabels: true,
                 showSystemStatsButton: false,
                 backgroundOpacity: 0.6,
+                transparentBackground: true,
+                showItemBackgrounds: false,
+                showAccentHighlights: false,
                 barHeight: barHeight,
                 accentColor: nil,
-                textColor: nil
+                textColor: SettingsColor(red: 1, green: 0, blue: 0, alpha: 1)
             )
             let measurementView = NSHostingView(
                 rootView: WorkspaceBarMeasurementView(snapshot: snapshot)
             )
-            let hostingView = NSHostingView(
+            let narrowMeasurementView = NSHostingView(
                 rootView: NarrowWidthLayout(width: proposalWidth) {
-                    WorkspaceBarView(
-                        model: WorkspaceBarModel(snapshot: snapshot),
-                        motionPolicy: MotionPolicy(animationsEnabled: false),
-                        onFocusWorkspace: { _ in },
-                        onFocusWindow: { _ in },
-                        onActivateScratchpad: { _ in }
-                    )
+                    WorkspaceBarMeasurementView(snapshot: snapshot)
                 }
             )
+            let narrowContent = NarrowWidthLayout(width: proposalWidth) {
+                WorkspaceBarView(
+                    model: WorkspaceBarModel(snapshot: snapshot),
+                    motionPolicy: MotionPolicy(animationsEnabled: false),
+                    onFocusWorkspace: { _ in },
+                    onFocusWindow: { _ in },
+                    onActivateScratchpad: { _ in }
+                )
+            }
+            let hostingView = NSHostingView(rootView: narrowContent)
 
             measurementView.layoutSubtreeIfNeeded()
+            narrowMeasurementView.layoutSubtreeIfNeeded()
             hostingView.layoutSubtreeIfNeeded()
 
-            XCTAssertGreaterThan(hostingView.fittingSize.width, proposalWidth, name)
+            XCTAssertGreaterThan(measurementView.fittingSize.width, proposalWidth, name)
             XCTAssertEqual(
-                hostingView.fittingSize.width,
+                narrowMeasurementView.fittingSize.width,
                 measurementView.fittingSize.width,
                 accuracy: 0.5,
                 name
             )
+            XCTAssertEqual(hostingView.fittingSize.width, proposalWidth, accuracy: 0.5, name)
             XCTAssertEqual(hostingView.fittingSize.height, barHeight, name)
+            let expected = try labelPixels(
+                WorkspaceBarMeasurementView(snapshot: snapshot),
+                canvasWidth: measurementView.fittingSize.width
+            )
+            let actual = try labelPixels(narrowContent, canvasWidth: measurementView.fittingSize.width)
+            XCTAssertFalse(expected.isEmpty, "Expected a visible label for \(name)")
+            XCTAssertTrue(actual == expected, "\(name) glyphs and their positions must survive the narrow proposal")
         }
     }
 

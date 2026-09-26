@@ -4,6 +4,12 @@
 import AppKit
 
 extension WorkspaceBarManager {
+    func refreshHoverPreviewTargets() {
+        hoverPreview?.targetsDidChange { [weak self] key in
+            self?.hoverTarget(for: key)
+        }
+    }
+
     func configureHoverPreview(controller: WMController) {
         guard hoverPreview == nil else { return }
         let preview = WorkspaceBarHoverPreviewController(

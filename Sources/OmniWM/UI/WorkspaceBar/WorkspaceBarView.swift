@@ -18,12 +18,14 @@ struct WorkspaceBarView: View {
     var interaction: WorkspaceBarIslandInteraction?
     var dragPresentation: WorkspaceBarDragPresentation?
 
+    @Environment(\.accessibilityReduceMotion) private var accessibilityReduceMotion
+
     var body: some View {
         WorkspaceBarContentView(
             snapshot: model.snapshot,
             slice: slice,
             showsSystemStatsButton: showsSystemStatsButton,
-            animationsEnabled: motionPolicy.animationsEnabled,
+            animationsEnabled: motionPolicy.animationsEnabled && !accessibilityReduceMotion,
             onFocusWorkspace: onFocusWorkspace,
             onFocusWindow: onFocusWindow,
             onActivateScratchpad: onActivateScratchpad,
@@ -74,6 +76,10 @@ private struct WorkspaceBarContentView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.colorSchemeContrast) private var colorSchemeContrast
 
+    private var animation: Animation? {
+        animationsEnabled ? .spring(response: 0.28, dampingFraction: 0.9) : nil
+    }
+
     private var itemHeight: CGFloat {
         max(16, snapshot.barHeight - 4)
     }
@@ -104,6 +110,34 @@ private struct WorkspaceBarContentView: View {
         RoundedRectangle(cornerRadius: 8, style: .continuous)
     }
 
+    private func workspaceBackgrounds(_ geometries: [WorkspaceDescriptor.ID: WorkspaceItemGeometry]) -> some View {
+        GeometryReader { proxy in
+            ZStack(alignment: .topLeading) {
+                ForEach(slice.items(in: snapshot), id: \.id) { item in
+                    if snapshot.showItemBackgrounds, let geometry = geometries[item.id] {
+                        let frame = proxy[geometry.bounds]
+                        WorkspaceBarItemShape(rect: frame, cornerRadius: cornerRadius)
+                            .fill(.regularMaterial)
+                            .opacity(geometry.isHovered || item.isFocused ? 1 : 0)
+                            .animation(animationsEnabled ? .easeOut(duration: 0.12) : nil, value: geometry.isHovered)
+                    }
+                }
+
+                if snapshot.showAccentHighlights,
+                   let focusedItem = slice.items(in: snapshot).first(where: \.isFocused),
+                   let geometry = geometries[focusedItem.id]
+                {
+                    let frame = proxy[geometry.bounds]
+                    WorkspaceBarItemShape(rect: frame, cornerRadius: cornerRadius)
+                        .strokeBorder(accentColor ?? .accentColor, lineWidth: 1)
+                        .animation(animation, value: focusedItem.id)
+                }
+            }
+            .allowsHitTesting(false)
+            .accessibilityHidden(true)
+        }
+    }
+
     var body: some View {
         HStack(spacing: workspaceSpacing) {
             ForEach(slice.items(in: snapshot), id: \.id) { item in
@@ -123,6 +157,7 @@ private struct WorkspaceBarContentView: View {
                     onFocusWorkspace: { onFocusWorkspace(item) },
                     onFocusWindow: onFocusWindow
                 )
+                .transition(.opacity)
             }
 
             ForEach(slice.scratchpads(in: snapshot)) { scratchpad in
@@ -138,11 +173,13 @@ private struct WorkspaceBarContentView: View {
                     textColor: textColor,
                     onActivateScratchpad: onActivateScratchpad
                 )
+                .transition(.opacity)
             }
 
             if showsSystemStatsButton {
                 SystemStatsButtonView(
                     itemHeight: itemHeight,
+                    animationsEnabled: animationsEnabled,
                     showItemBackgrounds: snapshot.showItemBackgrounds,
                     showAccentHighlights: snapshot.showAccentHighlights,
                     accentColor: accentColor,
@@ -153,8 +190,11 @@ private struct WorkspaceBarContentView: View {
             }
         }
         .padding(.horizontal, 4)
-        .frame(maxWidth: snapshot.backgroundStyle == .solidBlack ? .infinity : nil, alignment: .leading)
+        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
         .frame(height: itemHeight + 4)
+        .backgroundPreferenceValue(WorkspaceItemGeometryPreferenceKey.self) { geometry in
+            workspaceBackgrounds(geometry)
+        }
         .background {
             if snapshot.backgroundStyle == .solidBlack {
                 Rectangle().fill(Color.black)
@@ -176,6 +216,33 @@ private struct WorkspaceBarContentView: View {
             }
         }
         .environment(\.layoutDirection, .leftToRight)
+        .animation(animation, value: snapshot)
+        .animation(animation, value: slice)
+        .animation(animation, value: showsSystemStatsButton)
+        .transaction { transaction in
+            if !animationsEnabled {
+                transaction.animation = nil
+                transaction.disablesAnimations = true
+            }
+        }
+    }
+}
+
+private struct WorkspaceItemGeometry {
+    let bounds: Anchor<CGRect>
+    let isHovered: Bool
+}
+
+private struct WorkspaceItemGeometryPreferenceKey: PreferenceKey {
+    static var defaultValue: [WorkspaceDescriptor.ID: WorkspaceItemGeometry] {
+        [:]
+    }
+
+    static func reduce(
+        value: inout [WorkspaceDescriptor.ID: WorkspaceItemGeometry],
+        nextValue: () -> [WorkspaceDescriptor.ID: WorkspaceItemGeometry]
+    ) {
+        value.merge(nextValue(), uniquingKeysWith: { _, latest in latest })
     }
 }
 
@@ -272,7 +339,7 @@ private struct WorkspaceItemView: View {
             }
 
             if !item.floatingWindows.isEmpty {
-                FloatingWindowsGroupView(
+                WorkspaceBarFloatingWindowsGroupView(
                     windows: item.floatingWindows,
                     workspaceId: item.id,
                     iconSize: iconSize,
@@ -295,15 +362,13 @@ private struct WorkspaceItemView: View {
         .workspaceBarHitRegion(.workspace(item.id))
         .onTapGesture(perform: onFocusWorkspace)
         .background {
-            ZStack {
-                if showItemBackgrounds, item.isFocused || isHovered {
-                    RoundedRectangle(cornerRadius: cornerRadius).fill(.regularMaterial)
-                }
-                if (showAccentHighlights && item.isFocused) || isDropTarget {
-                    RoundedRectangle(cornerRadius: cornerRadius)
-                        .strokeBorder(accentColor ?? .accentColor, lineWidth: isDropTarget ? 1.5 : 1)
-                }
+            if isDropTarget {
+                RoundedRectangle(cornerRadius: cornerRadius)
+                    .strokeBorder(accentColor ?? .accentColor, lineWidth: 1.5)
             }
+        }
+        .anchorPreference(key: WorkspaceItemGeometryPreferenceKey.self, value: .bounds) {
+            [item.id: WorkspaceItemGeometry(bounds: $0, isHovered: isHovered)]
         }
         .onHover { hovering in
             isHovered = hovering
@@ -349,66 +414,5 @@ private struct WorkspaceLabelButton: View {
         .accessibilityLabel("Workspace \(item.name)")
         .accessibilityValue(item.isFocused ? String(localized: "Focused") : "")
         .help("Focus workspace \(item.name)")
-    }
-}
-
-@MainActor
-private struct FloatingWindowsGroupView: View {
-    let windows: [WorkspaceBarWindowItem]
-    let workspaceId: WorkspaceDescriptor.ID
-    let iconSize: CGFloat
-    let itemHeight: CGFloat
-    let isInFocusedWorkspace: Bool
-    let animationsEnabled: Bool
-    let showItemBackgrounds: Bool
-    let showAccentHighlights: Bool
-    let inactiveIconOpacity: Double?
-    let accentColor: Color?
-    let textColor: Color?
-    let onFocusWindow: (WindowHandle) -> Void
-
-    private var resolvedSecondaryTextColor: Color {
-        textColor ?? .secondary
-    }
-
-    var body: some View {
-        HStack(spacing: 3) {
-            Image(systemName: "rectangle.on.rectangle")
-                .font(.system(size: max(10, iconSize * 0.58), weight: .medium))
-                .foregroundStyle(resolvedSecondaryTextColor)
-                .accessibilityHidden(true)
-
-            ForEach(windows, id: \.id) { window in
-                WindowIconView(
-                    window: window,
-                    workspaceId: workspaceId,
-                    iconSize: iconSize,
-                    isFocused: window.isFocused,
-                    isInFocusedWorkspace: isInFocusedWorkspace,
-                    context: .floating,
-                    animationsEnabled: animationsEnabled,
-                    showAccentHighlights: showAccentHighlights,
-                    inactiveIconOpacity: inactiveIconOpacity,
-                    accentColor: accentColor,
-                    textColor: textColor,
-                    onFocusWindow: onFocusWindow
-                )
-                .workspaceBarHitRegion(.window(workspaceId, window.id))
-            }
-        }
-        .padding(.horizontal, 5)
-        .frame(height: max(16, itemHeight - 2))
-        .background {
-            if showItemBackgrounds {
-                Capsule(style: .continuous)
-                    .fill(.thinMaterial)
-                    .overlay {
-                        Capsule(style: .continuous)
-                            .strokeBorder(Color.secondary.opacity(0.24), lineWidth: 0.75)
-                    }
-            }
-        }
-        .accessibilityElement(children: .contain)
-        .accessibilityLabel("Floating windows")
     }
 }

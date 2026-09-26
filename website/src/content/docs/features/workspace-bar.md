@@ -7,6 +7,8 @@ sidebar:
 
 The workspace bar is a centered floating island on each display. It shows a chip per workspace — with the workspace's name, emoji-friendly — and the icons of the apps open there.
 
+**Unreleased (source builds):** The focused-workspace outline slides and resizes between chips with a responsive spring. Workspace and app changes, hover feedback, and bar resizing animate as well. Disable Animations in OmniWM or enable macOS Reduce Motion for immediate updates. In split mode, the focused-workspace outline animates within its island.
+
 ## Clicking the bar
 
 - Click a workspace chip to switch to that workspace.

@@ -16,6 +16,9 @@ extension WorkspaceBarManager {
         interaction.onHoverWindow = { [weak self] workspaceId, token, hovering in
             self?.windowHoverChanged(.window(workspaceId, token), hovering: hovering)
         }
+        interaction.onGeometryChange = { [weak self] in
+            self?.refreshHoverPreviewTargets()
+        }
         panel.interactionHandler = { [weak self] event, panel in
             self?.handlePanelEvent(event, panel: panel) ?? false
         }
