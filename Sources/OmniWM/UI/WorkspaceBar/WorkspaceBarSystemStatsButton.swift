@@ -7,6 +7,7 @@ import SwiftUI
 @MainActor
 struct SystemStatsButtonView: View {
     let itemHeight: CGFloat
+    var animationsEnabled = false
     let showItemBackgrounds: Bool
     let showAccentHighlights: Bool
     let accentColor: Color?
@@ -53,6 +54,7 @@ struct SystemStatsButtonView: View {
                 .background(WorkspaceBarAnchorReporter(onChange: onAnchorChange))
         }
         .buttonStyle(.plain)
+        .animation(animationsEnabled ? .easeOut(duration: 0.12) : nil, value: isHovered)
         .onHover { isHovered = $0 }
         .accessibilityLabel("System stats")
         .help("Show system stats")
@@ -62,11 +64,13 @@ struct SystemStatsButtonView: View {
 private struct WorkspaceBarAnchorReporter: NSViewRepresentable {
     let onChange: (CGPoint?) -> Void
 
-    func makeNSView(context: Context) -> NSView {
-        NSView(frame: .zero)
+    func makeNSView(context: Context) -> WorkspaceBarAnchorView {
+        let view = WorkspaceBarAnchorView(frame: .zero)
+        view.onGeometryChange = context.coordinator.report
+        return view
     }
 
-    func updateNSView(_ nsView: NSView, context: Context) {
+    func updateNSView(_ nsView: WorkspaceBarAnchorView, context: Context) {
         DispatchQueue.main.async {
             context.coordinator.report(nsView)
         }
@@ -99,5 +103,66 @@ private struct WorkspaceBarAnchorReporter: NSViewRepresentable {
                 onChange(anchor)
             }
         }
+    }
+}
+
+@MainActor
+final class WorkspaceBarAnchorView: NSView {
+    var onGeometryChange: ((NSView) -> Void)?
+    private var windowObserver: WorkspaceBarWindowGeometryObserver?
+
+    override func viewDidMoveToWindow() {
+        super.viewDidMoveToWindow()
+        windowObserver = window.map { window in
+            WorkspaceBarWindowGeometryObserver(window: window) { [weak self] in
+                self?.reportGeometry()
+            }
+        }
+        reportGeometry()
+    }
+
+    override func setFrameOrigin(_ newOrigin: NSPoint) {
+        super.setFrameOrigin(newOrigin)
+        reportGeometry()
+    }
+
+    override func setFrameSize(_ newSize: NSSize) {
+        super.setFrameSize(newSize)
+        reportGeometry()
+    }
+
+    override func layout() {
+        super.layout()
+        reportGeometry()
+    }
+
+    private func reportGeometry() {
+        onGeometryChange?(self)
+    }
+}
+
+@MainActor
+private final class WorkspaceBarWindowGeometryObserver: NSObject {
+    private let onChange: () -> Void
+
+    init(window: NSWindow, onChange: @escaping () -> Void) {
+        self.onChange = onChange
+        super.init()
+        for name in [NSWindow.didMoveNotification, NSWindow.didResizeNotification] {
+            NotificationCenter.default.addObserver(
+                self,
+                selector: #selector(reportGeometry),
+                name: name,
+                object: window
+            )
+        }
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+    @objc private func reportGeometry() {
+        onChange()
     }
 }

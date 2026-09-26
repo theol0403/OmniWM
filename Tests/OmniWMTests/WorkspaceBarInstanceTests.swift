@@ -109,6 +109,107 @@ final class WorkspaceBarInstanceTests: XCTestCase {
         XCTAssertEqual(instance.primary.lastAppliedFrame, frame)
     }
 
+    func testHostedContentGrowthDoesNotBypassExplicitPanelSizing() {
+        let fixture = makeFixture()
+        let instance = fixture.instance
+        let island = instance.primary
+        let panel = island.panel
+        defer { panel.close() }
+        let initial = CGRect(x: 300, y: 700, width: 120, height: 24)
+        island.applyFrame(initial) { $0.setFrame($1, display: false) }
+        island.hostingView.layoutSubtreeIfNeeded()
+        XCTAssertEqual(panel.frame, initial)
+
+        instance.updateSnapshot(instance.model.snapshot.replacingScratchpads([
+            WorkspaceBarScratchpadItem(index: 1, label: "Terminal workspace", windows: [], isVisible: false),
+            WorkspaceBarScratchpadItem(index: 2, label: "Editor workspace", windows: [], isVisible: false)
+        ]))
+        island.hostingView.layoutSubtreeIfNeeded()
+        XCTAssertEqual(panel.frame, initial, "Content changes must wait for the panel frame driver")
+
+        for width in [132.0, 154.0, 181.0, 220.0, 181.0, 154.0, 132.0, 120.0] {
+            let intermediate = CGRect(x: 360 - width / 2, y: 700, width: width, height: 24)
+            panel.setFrame(intermediate, display: false)
+            island.hostingView.layoutSubtreeIfNeeded()
+            XCTAssertEqual(panel.frame.size, intermediate.size, "Hosted content must not clamp an intermediate size")
+            XCTAssertEqual(panel.frame.minX, intermediate.minX, accuracy: 0.5)
+            XCTAssertEqual(panel.frame.minY, intermediate.minY, accuracy: 0.5)
+        }
+    }
+
+    func testVisibleHostedContentChangesWaitForExplicitPanelResize() async throws {
+        let fixture = makeFixture(barHeight: 30, animationsEnabled: true)
+        let instance = fixture.instance
+        let panel = instance.primary.panel
+        panel.alphaValue = 0
+        panel.ignoresMouseEvents = true
+        defer { panel.close() }
+        let workspaceIds = [UUID(), UUID()]
+        let windows = (0 ..< 2).map { index in
+            let token = WindowToken(pid: 42, windowId: 800 + index)
+            return WorkspaceBarWindowItem(
+                id: token,
+                handle: WindowHandle(id: token),
+                windowId: token.windowId,
+                appName: "App \(index)",
+                bundleId: nil,
+                icon: nil,
+                isFocused: false,
+                windowCount: 1,
+                hiddenWindowCount: 0,
+                allWindows: []
+            )
+        }
+        func snapshot(windowCount: Int) -> WorkspaceBarSnapshot {
+            WorkspaceBarSnapshot(
+                projection: WorkspaceBarProjection(
+                    items: workspaceIds.enumerated().map { index, id in
+                        WorkspaceBarItem(
+                            id: id, name: "\(index + 1)", rawName: "\(index + 1)", isFocused: index == 0,
+                            tiledWindows: index == 0 ? Array(windows.prefix(windowCount)) : [],
+                            floatingWindows: []
+                        )
+                    },
+                    scratchpads: []
+                ),
+                showLabels: true, showSystemStatsButton: false, backgroundOpacity: 0.1,
+                barHeight: 30, accentColor: nil, textColor: nil
+            )
+        }
+        let small = snapshot(windowCount: 1)
+        let large = snapshot(windowCount: 2)
+        func measuredWidth(_ snapshot: WorkspaceBarSnapshot) -> CGFloat {
+            let view = NSHostingView(rootView: WorkspaceBarMeasurementView(snapshot: snapshot))
+            view.layoutSubtreeIfNeeded()
+            return view.fittingSize.width.rounded(.up)
+        }
+        let smallWidth = measuredWidth(small)
+        let largeWidth = measuredWidth(large)
+        XCTAssertGreaterThan(largeWidth, smallWidth)
+        instance.updateSnapshot(small)
+        let initial = CGRect(x: 300, y: 700, width: smallWidth, height: 30)
+        instance.primary.applyFrame(initial) { $0.setFrame($1, display: true) }
+        panel.orderFrontRegardless()
+        try await Task.sleep(for: .milliseconds(120))
+        XCTAssertEqual(panel.frame.width, smallWidth)
+
+        for (snapshot, expectedWidth) in [(large, smallWidth), (small, largeWidth)] {
+            panel.setFrame(CGRect(x: 300, y: 700, width: expectedWidth, height: 30), display: true)
+            instance.updateSnapshot(snapshot)
+            var observedWidths: [CGFloat] = []
+            for _ in 0 ..< 30 {
+                try await Task.sleep(for: .milliseconds(10))
+                instance.primary.hostingView.layoutSubtreeIfNeeded()
+                panel.displayIfNeeded()
+                observedWidths.append(panel.frame.width)
+            }
+            XCTAssertTrue(
+                observedWidths.allSatisfy { $0 == expectedWidth },
+                "Deferred SwiftUI layout resized the panel without its frame driver: \(observedWidths)"
+            )
+        }
+    }
+
     func testFillModeCompactsAgainstPanelWidthAndRecalculatesAfterModeAndMonitorChanges() {
         let fixture = makeFixture(barHeight: 28)
         let instance = fixture.instance
@@ -196,7 +297,11 @@ final class WorkspaceBarInstanceTests: XCTestCase {
         XCTAssertFalse(instance.model.snapshot.showAccentHighlights)
     }
 
-    private func makeFixture(screenDisplayId: CGDirectDisplayID? = nil, barHeight: CGFloat = 24) -> Fixture {
+    private func makeFixture(
+        screenDisplayId: CGDirectDisplayID? = nil,
+        barHeight: CGFloat = 24,
+        animationsEnabled: Bool = false
+    ) -> Fixture {
         let snapshot = WorkspaceBarSnapshot(
             projection: WorkspaceBarProjection(items: [], scratchpads: []),
             showLabels: true,
@@ -212,7 +317,7 @@ final class WorkspaceBarInstanceTests: XCTestCase {
             panel: WorkspaceBarPanel.defaultPanel(),
             rootView: WorkspaceBarView(
                 model: model,
-                motionPolicy: MotionPolicy(animationsEnabled: false),
+                motionPolicy: MotionPolicy(animationsEnabled: animationsEnabled),
                 onFocusWorkspace: { _ in },
                 onFocusWindow: { _ in },
                 onActivateScratchpad: { _ in }

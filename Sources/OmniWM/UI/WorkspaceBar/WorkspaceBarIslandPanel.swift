@@ -9,9 +9,12 @@ final class WorkspaceBarIslandPanel {
     let panel: WorkspaceBarPanel
     let hostingView: NSHostingView<WorkspaceBarView>
     let interaction: WorkspaceBarIslandInteraction
+    private let frameMotion: WorkspaceBarFrameMotion
     var slice: WorkspaceBarIslandSlice
     var showsSystemStatsButton: Bool
-    var lastAppliedFrame: NSRect?
+    var lastAppliedFrame: NSRect? {
+        frameMotion.target
+    }
 
     init(
         panel: WorkspaceBarPanel,
@@ -28,9 +31,9 @@ final class WorkspaceBarIslandPanel {
         self.panel = panel
         self.hostingView = hostingView
         self.interaction = interaction
+        frameMotion = WorkspaceBarFrameMotion(panel: panel, motionPolicy: rootView.motionPolicy)
         slice = rootView.slice
         showsSystemStatsButton = rootView.showsSystemStatsButton
-        lastAppliedFrame = nil
         applySettings(resolved: resolved)
     }
 
@@ -46,10 +49,14 @@ final class WorkspaceBarIslandPanel {
 
     func applyFrame(
         _ frame: NSRect,
-        using frameApplier: (WorkspaceBarPanel, NSRect) -> Void
+        using frameApplier: @escaping (WorkspaceBarPanel, NSRect) -> Void
     ) {
-        guard lastAppliedFrame != frame else { return }
-        frameApplier(panel, frame)
-        lastAppliedFrame = frame
+        frameMotion.apply(frame) { [interaction] panel, frame in
+            let previousFrame = panel.frame
+            frameApplier(panel, frame)
+            if panel.frame != previousFrame {
+                interaction.panelFrameDidChange()
+            }
+        }
     }
 }

@@ -34,17 +34,22 @@ final class WorkspaceBarIslandInteraction {
     var onShowMenu: (WorkspaceBarHitTarget) -> Void = { _ in }
     var onActivateWindow: (WorkspaceDescriptor.ID, WindowToken) -> Void = { _, _ in }
     var onHoverWindow: (WorkspaceDescriptor.ID, WindowToken, Bool) -> Void = { _, _, _ in }
+    var onGeometryChange: () -> Void = {}
+
+    func panelFrameDidChange() {
+        geometryDidChange()
+    }
 
     func update(_ target: WorkspaceBarHitTarget, frame: CGRect) {
         guard frames[target] != frame else { return }
         frames[target] = frame
-        generation &+= 1
+        geometryDidChange()
     }
 
     func remove(_ target: WorkspaceBarHitTarget, reportedFrame: CGRect?) {
         guard let reportedFrame, frames[target] == reportedFrame else { return }
         frames[target] = nil
-        generation &+= 1
+        geometryDidChange()
     }
 
     func updateLabel(_ workspaceId: WorkspaceDescriptor.ID, frame: CGRect) {
@@ -64,6 +69,11 @@ final class WorkspaceBarIslandInteraction {
             }
         }
         return best
+    }
+
+    private func geometryDidChange() {
+        generation &+= 1
+        onGeometryChange()
     }
 }
 
