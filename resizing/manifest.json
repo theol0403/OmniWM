@@ -1,0 +1,235 @@
+{
+  "capture" : "Actual running OmniWM Dev workspace-bar window, recorded with ScreenCaptureKit desktopIndependentWindow",
+  "captureEndpointBasis" : "Recorded host clock after SCStream.stopCapture completed",
+  "captureEndpointEstimated" : false,
+  "displayPixelScale" : 2,
+  "executableSHA256" : "3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695",
+  "frames" : [
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1240,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 0,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0000.png",
+      "sourcePresentationSeconds" : 0
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1240,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.03206570900511,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0001.png",
+      "sourcePresentationSeconds" : 9.53206570900511
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1238,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.0510535420035012,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0002.png",
+      "sourcePresentationSeconds" : 9.5510535420035012
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1232,
+        "x" : 4,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.0691866249544546,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0003.png",
+      "sourcePresentationSeconds" : 9.5691866249544546
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1222,
+        "x" : 8,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.0831604590057395,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0004.png",
+      "sourcePresentationSeconds" : 9.5831604590057395
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1214,
+        "x" : 12,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.1133937919512391,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0005.png",
+      "sourcePresentationSeconds" : 9.6133937919512391
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1200,
+        "x" : 20,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.1224771249690093,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0006.png",
+      "sourcePresentationSeconds" : 9.6224771249690093
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1200,
+        "x" : 20,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.1344699169858359,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0007.png",
+      "sourcePresentationSeconds" : 9.6344699169858359
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1196,
+        "x" : 22,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.1503158339764923,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0008.png",
+      "sourcePresentationSeconds" : 9.6503158339764923
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1190,
+        "x" : 24,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2004179169889539,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0009.png",
+      "sourcePresentationSeconds" : 9.7004179169889539
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1190,
+        "x" : 24,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2169045420014299,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0010.png",
+      "sourcePresentationSeconds" : 9.7169045420014299
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1190,
+        "x" : 24,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2309609589865431,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0011.png",
+      "sourcePresentationSeconds" : 9.7309609589865431
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1190,
+        "x" : 24,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2497176670003682,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0012.png",
+      "sourcePresentationSeconds" : 9.7497176670003682
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1190,
+        "x" : 24,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.267099458957091,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0013.png",
+      "sourcePresentationSeconds" : 9.767099458957091
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 26,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2957864589989185,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0014.png",
+      "sourcePresentationSeconds" : 9.7957864589989185
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 26,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.3659699999843724,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0015.png",
+      "sourcePresentationSeconds" : 9.8659699999843724
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 26,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.432527583965566,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0016.png",
+      "sourcePresentationSeconds" : 9.932527583965566
+    }
+  ],
+  "heightPixels" : 60,
+  "initialFrameHeldFromBeforeTrimStart" : true,
+  "lastRecordedFrameSeconds" : 1.432527583965566,
+  "limitations" : "Capture delivery intervals do not prove compositor\/render FPS; unchanged content may omit samples. H.264 and GIF are lossy. The fixed crop contains the actual bar only, not the whole desktop.",
+  "originalCaptureFrames" : 17,
+  "presentationIntervalsMilliseconds" : {
+    "maximum" : 9532.06570900511,
+    "median" : 18.756708013825119,
+    "minimum" : 9.083333017770201
+  },
+  "previewFrames" : 6,
+  "publishableTimingEvidence" : true,
+  "sourceCaptureDurationSeconds" : 30.027857709035743,
+  "sourceClipEndSeconds" : 11.5,
+  "sourceClipStartSeconds" : 8.5,
+  "sourceFrames" : 17,
+  "spatialProcessing" : "Fixed crop spanning recorded native panel bounds at original display pixel scale; per-frame contentScale is reversed when ScreenCaptureKit resized its fixed capture surface. No generated UI, labels, icons, or decoration. Black fills only unavailable pixels outside the captured window or transparent panel pixels.",
+  "temporalProcessing" : "One MP4 frame per selected captured PNG. Original presentation intervals are preserved, offset by sourceClipStartSeconds. When trimming begins between samples, the real image already held at that instant becomes the initial frame at zero. No duplicate or interpolated animation frames. The final real image remains until sourceClipEndSeconds. GIF selects existing frames about every90ms and retains elapsed delays.",
+  "trimmed" : true,
+  "videoDurationSeconds" : 3,
+  "videoFrames" : 17,
+  "widthPixels" : 1240
+}

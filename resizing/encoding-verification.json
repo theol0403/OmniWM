@@ -1,0 +1,15 @@
+{
+  "captureEndpointBasis" : "Recorded host clock after SCStream.stopCapture completed",
+  "captureEndpointEstimated" : false,
+  "decodedFrames" : 17,
+  "durationErrorSeconds" : 0,
+  "durationSeconds" : 3,
+  "expectedDurationSeconds" : 3,
+  "heightPixels" : 60,
+  "maximumPresentationTimestampErrorSeconds" : 9.9998437241843874e-07,
+  "method" : "AVAssetReader decodes the completed MP4; frame count and each decoded timestamp are compared with original SC presentation timestamps. This verifies media encoding fidelity, not renderer FPS.",
+  "presentationTimesMatchSourceWithinTwoMicroseconds" : true,
+  "publishableTimingEvidence" : true,
+  "sourceFrames" : 17,
+  "widthPixels" : 1240
+}

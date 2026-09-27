@@ -1,0 +1,1895 @@
+{
+  "capture" : "Actual running OmniWM Dev workspace-bar window, recorded with ScreenCaptureKit desktopIndependentWindow",
+  "captureEndpointBasis" : "Recorded host clock after SCStream.stopCapture completed",
+  "captureEndpointEstimated" : false,
+  "displayPixelScale" : 2,
+  "executableSHA256" : "3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695",
+  "frames" : [
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 0,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0000.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2571110829594545,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0001.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.2800407499889843,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0002.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.3045645419624634,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0003.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.3318954169517383,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0004.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.3638030419824645,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0005.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.3938786669750698,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0006.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.4254599169944413,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0007.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.4953884169808589,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0008.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.5904793329536915,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0009.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.6629635829594918,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0010.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.6883189169457182,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0011.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.7126861249562353,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0012.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.7381637079524808,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0013.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.7622852919739671,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0014.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 1.9944291669526137,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0015.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.0135509579558857,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0016.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.0353584999684244,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0017.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.0661591669777408,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0018.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.1446825829916634,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0019.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.1661286249873228,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0020.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.2094500419916585,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0021.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.2349485000013374,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0022.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.2590577919618227,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0023.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.2829943749820814,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0024.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.3015600829967298,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0025.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.3248017919831909,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0026.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.3420330419903621,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0027.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.3661314999917522,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0028.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.3837345829815604,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0029.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.4083358749630861,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0030.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.4252956669661216,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0031.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.9609557499643415,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0032.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 2.9754406669526361,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0033.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.001098207954783,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0034.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.0711775829549879,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0035.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.080293332983274,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0036.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.0937405419535935,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0037.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.1112927919602953,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0038.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.1424551669624634,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0039.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.1523127919645049,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0040.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.162855916947592,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0041.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.1759776669787243,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0042.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.1955011249519885,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0043.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.2052140419837087,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0044.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.2180710419779643,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0045.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.2287583329598419,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0046.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.2434390419512056,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0047.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.2666755419922993,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0048.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.2777945829438977,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0049.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.3003720829728991,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0050.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.3173822919488885,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0051.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.3283700829488225,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0052.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.3420006669475697,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0053.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.3513835829799064,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0054.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.37932866695337,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0055.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.3920977499801666,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0056.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.4067940829554573,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0057.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.4310465419548564,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0058.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.4457529169740155,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0059.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.4550260419491678,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0060.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.4795992079889402,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0061.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.4977812499855645,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0062.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.508448957989458,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0063.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.5199342079577036,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0064.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.5432315829675645,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0065.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.5597822499694303,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0066.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.5833565829670988,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0067.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.5959186249529012,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0068.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.6060603749938309,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0069.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.6228827919694595,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0070.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 3.6480144999804907,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0071.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.206169624987524,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0072.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.2240320829441771,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0073.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.2421862499904819,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0074.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.2653242499800399,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0075.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.2834071669494733,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0076.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.3012386669870466,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0077.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.3238350829924457,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0078.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.34234995796578,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0079.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.364992041955702,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0080.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.3821805829647928,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0081.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.3998714579502121,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0082.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.4185099999886006,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0083.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.4413040829822421,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0084.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.4582882079994306,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0085.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.4738955419743434,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0086.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.4931763329659589,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0087.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.5141077079460956,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0088.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.5350214169593528,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0089.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.5512639999506064,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0090.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.5666317919967696,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0091.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.5836777919903398,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0092.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.5996766669559292,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0093.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.6170204999507405,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0094.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.6332631249679253,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0095.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.6500453749904409,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0096.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.6670838329591788,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0097.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.6838369999895804,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0098.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7010070419637486,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0099.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7177447919966653,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0100.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7347571249702014,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0101.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7518210419802926,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0102.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7686963329906575,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0103.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7837019579601474,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0104.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.7999254169990309,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0105.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.8164219999453053,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0106.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.8335172499646433,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0107.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.8504141249577515,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0108.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.8673509579966776,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0109.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.8840468329726718,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0110.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.9004640829516575,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0111.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 4.9176760419504717,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0112.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.2450539169949479,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0113.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.2588087919866666,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0114.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.2731661249999888,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0115.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.3151262499741279,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0116.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.3252235829713754,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0117.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.3396062079700641,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0118.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.5231464999960735,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0119.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.6286187079967931,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0120.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.6841219999478199,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0121.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.6952556249452755,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0122.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.8353492499445565,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0123.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.8686318330001086,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0124.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.9082581249531358,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0125.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.9278672079672106,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0126.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.9490159999695607,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0127.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.9657309579779394,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0128.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.9824227499775589,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0129.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 5.9994575419696048,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0130.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.0162879169802181,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0131.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.0333983329473995,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0132.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.0501208329806104,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0133.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.0743019999936223,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0134.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.091953624971211,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0135.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.1092467499547638,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0136.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.126981999957934,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0137.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.1482709579868242,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0138.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.166311124979984,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0139.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.1852667499915697,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0140.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.2077021669829264,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0141.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.2259833749849349,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0142.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.2499736669706181,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0143.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.2685416249441914,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0144.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.2867944579920731,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0145.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.304059874964878,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0146.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.3194795000017621,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0147.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.3367384999874048,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0148.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.3532952919485979,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0149.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.7535596669767983,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0150.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.7707897919462994,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0151.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.7883037079591304,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0152.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.8113464579801075,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0153.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.8287067079800181,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0154.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.8473279999452643,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0155.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 6.8701721249963157,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0156.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.2683962079463527,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0157.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.288761124946177,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0158.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.30508254194865,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0159.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.3228852499742061,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0160.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.3449493329972029,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0161.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.3650827919482253,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0162.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.7660112079465762,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0163.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.7839589169598185,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0164.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.8091542079928331,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0165.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.8274197919527069,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0166.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.850491166987922,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0167.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.8708064169622958,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0168.png"
+    },
+    {
+      "barPixelRect" : {
+        "height" : 60,
+        "width" : 1188,
+        "x" : 0,
+        "y" : 0
+      },
+      "presentationSeconds" : 7.8920535419601947,
+      "sourceContentScale" : 1,
+      "sourceFrame" : "frame-0169.png"
+    }
+  ],
+  "heightPixels" : 60,
+  "lastRecordedFrameSeconds" : 7.8920535419601947,
+  "limitations" : "Capture delivery intervals do not prove compositor\/render FPS; unchanged content may omit samples. H.264 and GIF are lossy. The fixed crop contains the actual bar only, not the whole desktop.",
+  "presentationIntervalsMilliseconds" : {
+    "maximum" : 1257.1110829594545,
+    "median" : 18.154167046304792,
+    "minimum" : 9.1157500282861292
+  },
+  "previewFrames" : 42,
+  "publishableTimingEvidence" : true,
+  "sourceFrames" : 170,
+  "spatialProcessing" : "Fixed crop spanning recorded native panel bounds at original display pixel scale; per-frame contentScale is reversed when ScreenCaptureKit resized its fixed capture surface. No generated UI, labels, icons, or decoration. Black fills only unavailable pixels outside the captured window or transparent panel pixels.",
+  "temporalProcessing" : "One MP4 frame per captured PNG at its actual ScreenCaptureKit presentation timestamp, offset to zero. No duplicate or interpolated animation frames. The final real image remains until the capture endpoint described separately. GIF selects existing frames about every 90ms and retains elapsed delays.",
+  "videoDurationSeconds" : 8.0376585420453921,
+  "videoFrames" : 170,
+  "widthPixels" : 1188
+}

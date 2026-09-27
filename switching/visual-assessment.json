@@ -1,0 +1,86 @@
+{
+  "recording": "Actual installed OmniWM Dev workspace-bar window; no generated UI",
+  "sourceCommitReportedByIPC": "322e400",
+  "executableSHA256": "3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695",
+  "recordedFrames": 170,
+  "nativePanelPoints": {
+    "width": 594,
+    "height": 30
+  },
+  "encodedPixels": {
+    "width": 1188,
+    "height": 60
+  },
+  "durationSeconds": 8.037658542045392,
+  "restorationSucceeded": true,
+  "restorationErrors": [],
+  "commandsDuringCapture": [
+    {
+      "workspace": "2",
+      "startedSecondsAfterCaptureStart": 0.6031098365783691,
+      "completedSecondsAfterCaptureStart": 0.6262078285217285,
+      "succeeded": true
+    },
+    {
+      "workspace": "3",
+      "startedSecondsAfterCaptureStart": 1.7061591148376465,
+      "completedSecondsAfterCaptureStart": 1.7278728485107422,
+      "succeeded": true
+    },
+    {
+      "workspace": "4",
+      "startedSecondsAfterCaptureStart": 2.80684494972229,
+      "completedSecondsAfterCaptureStart": 2.8306429386138916,
+      "succeeded": true
+    },
+    {
+      "workspace": "1",
+      "startedSecondsAfterCaptureStart": 3.906322956085205,
+      "completedSecondsAfterCaptureStart": 3.9303910732269287,
+      "succeeded": true
+    },
+    {
+      "workspace": "4",
+      "startedSecondsAfterCaptureStart": 5.102726936340332,
+      "completedSecondsAfterCaptureStart": 5.125190734863281,
+      "succeeded": true
+    },
+    {
+      "workspace": "1",
+      "startedSecondsAfterCaptureStart": 5.223507881164551,
+      "completedSecondsAfterCaptureStart": 5.249871015548706,
+      "succeeded": true
+    },
+    {
+      "workspace": "4",
+      "startedSecondsAfterCaptureStart": 5.346747159957886,
+      "completedSecondsAfterCaptureStart": 5.478015899658203,
+      "succeeded": true
+    },
+    {
+      "workspace": "1",
+      "startedSecondsAfterCaptureStart": 5.478032827377319,
+      "completedSecondsAfterCaptureStart": 5.606157064437866,
+      "succeeded": true
+    }
+  ],
+  "visualObservations": [
+    "Entire native bar remains in crop; icons remain readable and stationary while selector moves.",
+    "Intermediate selector positions are visible during ordinary transitions.",
+    "Rapid reversal samples move right, then left, then right, then left; final selector correctly encloses workspace1.",
+    "Inspected raw frames 0,1,3,4,115,116,117,119,120,121,123 and decoded frames0,56,113,169; no clipping or invented overlays found."
+  ],
+  "captureLimitations": [
+    "Sparse captured intervals limit judgment of continuous perceived smoothness. Initial two samples are separated by1.257s; first command completes at0.626s after start and next sample at1.242s is already mid-transition.",
+    "Rapid sequence contains183.5ms and140.1ms gaps between samples; MP4 faithfully preserves those gaps.",
+    "Captured frame intervals do not establish compositor or production render FPS."
+  ],
+  "capturedIntervalsMilliseconds": {
+    "min": 9.11575002828613,
+    "median": 18.154167046304792,
+    "p95": 140.09362499928102,
+    "max": 1257.1110829594545
+  },
+  "encodingVerified": true,
+  "continuousSmoothnessProven": false
+}

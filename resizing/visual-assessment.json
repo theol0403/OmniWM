@@ -1,0 +1,139 @@
+{
+  "recording": "Actual installed OmniWM Dev workspace-bar window during actual TextEdit quit",
+  "sourceCommit": "322e400",
+  "executableSHA256": "3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695",
+  "capturedFrames": 17,
+  "fullDurationSeconds": 30.027857709035743,
+  "previewDurationSeconds": 3,
+  "previewSourceRangeSeconds": [
+    8.5,
+    11.5
+  ],
+  "allCapturedTransitionFramesRetained": true,
+  "transitionTimestampsPreserved": true,
+  "nativePanelWidthPoints": [
+    620,
+    594
+  ],
+  "widthAnimationObserved": true,
+  "visualObservations": [
+    "The actual TextEdit app icon disappears and the native bar narrows in multiple captured intermediate widths, remaining centered within AppKit pixel rounding.",
+    "Selector leading edge stays aligned within the changing panel and remains unclipped.",
+    "App icons remain readable and move with the bar layout.",
+    "Decoded frames0,5,11,16 show the real bar only; no document text/window titles, generated UI, labels or decoration."
+  ],
+  "sampledWidthTransitionSeconds": [
+    9.53207,
+    9.79579
+  ],
+  "limitations": [
+    "The GIF is a lower-cadence preview; MP4 retains every captured frame.",
+    "Captured delivery intervals do not establish production render FPS.",
+    "For the trimmed clip, the original initial image is held at time0 because it was the last real sample displayed at the8.5-second cut; subsequent transition timestamps are unchanged after offset.",
+    "manifest.presentationIntervalsMilliseconds describes intervals between source samples, including the inactive lead-in; the trimmed video frame timestamps are listed explicitly."
+  ],
+  "samples": [
+    {
+      "sourceFrame": "frame-0000.png",
+      "secondsAfterFirstSample": 0.0,
+      "nativeWidthPoints": 620,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0001.png",
+      "secondsAfterFirstSample": 9.53206570900511,
+      "nativeWidthPoints": 620,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0002.png",
+      "secondsAfterFirstSample": 9.551053542003501,
+      "nativeWidthPoints": 619,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0003.png",
+      "secondsAfterFirstSample": 9.569186624954455,
+      "nativeWidthPoints": 616,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0004.png",
+      "secondsAfterFirstSample": 9.58316045900574,
+      "nativeWidthPoints": 611,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0005.png",
+      "secondsAfterFirstSample": 9.613393791951239,
+      "nativeWidthPoints": 607,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0006.png",
+      "secondsAfterFirstSample": 9.62247712496901,
+      "nativeWidthPoints": 600,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0007.png",
+      "secondsAfterFirstSample": 9.634469916985836,
+      "nativeWidthPoints": 600,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0008.png",
+      "secondsAfterFirstSample": 9.650315833976492,
+      "nativeWidthPoints": 598,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0009.png",
+      "secondsAfterFirstSample": 9.700417916988954,
+      "nativeWidthPoints": 595,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0010.png",
+      "secondsAfterFirstSample": 9.71690454200143,
+      "nativeWidthPoints": 595,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0011.png",
+      "secondsAfterFirstSample": 9.730960958986543,
+      "nativeWidthPoints": 595,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0012.png",
+      "secondsAfterFirstSample": 9.749717667000368,
+      "nativeWidthPoints": 595,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0013.png",
+      "secondsAfterFirstSample": 9.767099458957091,
+      "nativeWidthPoints": 595,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0014.png",
+      "secondsAfterFirstSample": 9.795786458998919,
+      "nativeWidthPoints": 594,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0015.png",
+      "secondsAfterFirstSample": 9.865969999984372,
+      "nativeWidthPoints": 594,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    },
+    {
+      "sourceFrame": "frame-0016.png",
+      "secondsAfterFirstSample": 9.932527583965566,
+      "nativeWidthPoints": 594,
+      "selectorBorderStripLeftLocalPoints": 6.0
+    }
+  ]
+}

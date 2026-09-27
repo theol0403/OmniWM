@@ -1,0 +1,41 @@
+{
+  "sourceCommitFull": "322e400272a8a64fe8a2c3813d21102abc36ae6a",
+  "sourceCommitBasis": "Same parent-prepared and IPC-verified running candidate as switching capture; raw capture independently verifies exact executableSHA256.",
+  "executableSHA256": "3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695",
+  "captureMethod": "ScreenCaptureKit desktopIndependentWindow; Dev panel only",
+  "captureEndpointEstimated": false,
+  "recorderSHA256": "7dd8545fa58173516a92cd90e116271451ae1e5fbd9bbb738e78ac90d736f433",
+  "recorderSourceSHA256": "b9b8abfe1fd25e24fa2e8ca4856266c1c6713e65ccc1064f444d25d802d004e9",
+  "recorderBinaryRetained": true,
+  "encoderSourceSHA256": "6f3f73c9a60a8a453ed0bb67b40b847acde3b516f9b12eef9b652abbd33a52b7",
+  "encoderSHA256": "b92e3781d47fd68be02ed986da711752150a21dab746df82a0fef2bae5ccbbf6",
+  "retainedToolSources": "tool-versions/resizing-322e400",
+  "files": {
+    "workspace-bar.mp4": "05eb660f5a30479af121df865bfdb31d7cfc7f7371812ed460f1ffea1f1b060b",
+    "workspace-bar.gif": "dfc9f101201893edc3d1011b8ba59262e07885d6c47b6cf5d4c3da62c7c8d134",
+    "poster.png": "853b5e469205eb2afcc634ba76386b61b2122ad2c658d7c595a190573c00584a",
+    "manifest.json": "c58994949efa9129c48431563f5efea0640150e78e64dd8c14afc356e9cc539f",
+    "encoding-verification.json": "2d9d32db90afccc9289df0125475c20e8f09d94c28f530c7f9b2182de57670c2",
+    "visual-assessment.json": "7a839ccfb0551ed5383e89f0cf6e4d84f477bcc65255605a8b3a8a7dca74e88c"
+  },
+  "sourceFrames": {
+    "frame-0000.png": "f0e5395c667218b013029d1a98ed267bec408cba90edacc5913369a8f50ebc36",
+    "frame-0001.png": "e7d3005ee87e23029932563f49dbe829d6d3148d08ea46bdff0f11124a68d00a",
+    "frame-0002.png": "630644c85c21e0da46b58ac9ee531a6545e899405a9d03e41124ac7e4bf603b9",
+    "frame-0003.png": "f8680ef91dbff5fedc9980a5fd43f1645d62bcc00c0b51d1f0d083e4a99b3b07",
+    "frame-0004.png": "94818fa4b4d993a6c1afeca3d7b1cb8d42921db20c0a8183928dc606f4fc2326",
+    "frame-0005.png": "87bef9ec4664037f763ae44a870dae7041a0e96b123892939b970b3a4d992720",
+    "frame-0006.png": "a2f8ab88307407c51db9df004ac3c84e0d144f0bdf044f1b1a19d86abc82db02",
+    "frame-0007.png": "a2f8ab88307407c51db9df004ac3c84e0d144f0bdf044f1b1a19d86abc82db02",
+    "frame-0008.png": "c3f0d70f8540b072570ad6b2a6d5f535af7c44bdb60a2d1d65be7de5f3f4ba76",
+    "frame-0009.png": "a8a826f75fe73b8332a1368a6bbb1f1821013cd7cff66554e8c77f826ca87a10",
+    "frame-0010.png": "1b5b4147a8bd50f385e7eb3c74efb20874f74473bec2e96a7bd73657f60b58e1",
+    "frame-0011.png": "a133a92555bd0e401053ef44cfe70839f7e920f4eb2fab93f200603fe696de28",
+    "frame-0012.png": "cbfa77af189467e0edea9b3d4f0ca68c5154047cb90637d57a49d26c4a40a48b",
+    "frame-0013.png": "8d120cabcf24c966aac1e0da32c69db59e3cf97152d4d5d9842cb753ea0c0483",
+    "frame-0014.png": "295f66f7d76e57f5bbff2e9dd43b3f8627c4f1f38ea113a5598fd18f5e2bb3c4",
+    "frame-0015.png": "209e276a8a2fcb0a5f4d547c80629ac6f886e75d9f05e9abeb2b381076d5f7f9",
+    "frame-0016.png": "209e276a8a2fcb0a5f4d547c80629ac6f886e75d9f05e9abeb2b381076d5f7f9"
+  },
+  "publicationSanitization": "Absolute native screen position removed from visual assessment; original media pixels and all timing/frame hashes are unchanged."
+}
