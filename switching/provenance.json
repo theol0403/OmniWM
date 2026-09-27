@@ -9,11 +9,13 @@
   "encoderSourceSHA256": "251dc3d8d573fe8c0a8c292af74bd13c7fad41300461449f9e1b425f430b4a39",
   "files": {
     "workspace-bar.mp4": "15212e0a690047e8ead4ac999d9b767fc2c598e28364b8d7d9fe2551aa325149",
-    "workspace-bar.gif": "d6d2e76027d2f418d2dfded014b55d2ae1ee65243b35f0ca5d42e91e640ee65a",
     "poster.png": "6876edaa8947b49ca4b653b0984510383c305006902f8ed87ab55d07cd939bbb",
     "manifest.json": "5509c7115a6496f6c172ba02fd908bc4ca0d7abe45a7670fa436ea66efac680c",
     "encoding-verification.json": "e9830b1d610154bf15b4bb4ae4b2369db986656b5a1b610c1ad1e3017bc1aaa6",
-    "visual-assessment.json": "dcb4dd0fdfa6c1cb2f5a7914c8546303be36515ad5f58ca3bb3a063007afeb1f"
+    "visual-assessment.json": "dcb4dd0fdfa6c1cb2f5a7914c8546303be36515ad5f58ca3bb3a063007afeb1f",
+    "workspace-bar-preview.png": "6607d66cf2402994db834c0eda5f56efef1802e47ea621cfbbc6039061bd2482",
+    "preview-processing.json": "21a4f9ca362cc69513df0eebceef6d64b2be6296c4d522f9c1b5ac11770177c5",
+    "preview-verification.json": "18addfae34f8633403ca0cceb20686de13bb1715afb1233814672c426aa05b5b"
   },
   "sourceFrames": {
     "frame-0000.png": "8d6573c352f7a92e6cc8c3a732bab45ded685eadbb926bdc67882e56830eee47",
@@ -190,5 +192,6 @@
   "recorderSourceSHA256": "003949ae778e0aac931d9ba2a76b9459d755d6322a6c6da78b1c09a7ff9f13f1",
   "recorderBinaryRetained": false,
   "recorderBinaryProvenanceNote": "The helper binary was rebuilt after this capture to support30-second recordings. Its earlier hash was recorded before that rebuild; the earlier binary is not retained. Current helper hash must not be claimed to match the historical one.",
-  "retainedToolSources": "tool-versions/switching-322e400"
+  "retainedToolSources": "tool-versions/switching-322e400",
+  "inlinePreview": "Lossless animated PNG retaining all captured frames. Browser-safe11ms minimum delay is disclosed in preview-processing.json; exact-timing MP4 remains unchanged."
 }

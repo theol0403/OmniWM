@@ -12,11 +12,13 @@
   "retainedToolSources": "tool-versions/resizing-322e400",
   "files": {
     "workspace-bar.mp4": "05eb660f5a30479af121df865bfdb31d7cfc7f7371812ed460f1ffea1f1b060b",
-    "workspace-bar.gif": "dfc9f101201893edc3d1011b8ba59262e07885d6c47b6cf5d4c3da62c7c8d134",
     "poster.png": "853b5e469205eb2afcc634ba76386b61b2122ad2c658d7c595a190573c00584a",
     "manifest.json": "c58994949efa9129c48431563f5efea0640150e78e64dd8c14afc356e9cc539f",
     "encoding-verification.json": "2d9d32db90afccc9289df0125475c20e8f09d94c28f530c7f9b2182de57670c2",
-    "visual-assessment.json": "7a839ccfb0551ed5383e89f0cf6e4d84f477bcc65255605a8b3a8a7dca74e88c"
+    "visual-assessment.json": "7a839ccfb0551ed5383e89f0cf6e4d84f477bcc65255605a8b3a8a7dca74e88c",
+    "workspace-bar-preview.png": "f6ac9762443c9738c09a82cb6943029749d920d7e78ce2bdd3911419298fe66d",
+    "preview-processing.json": "6e67e1e653b98f83a3c88969a4848c22d9233f9b2303792570a1a93164dbb4f0",
+    "preview-verification.json": "df96aea47c5df8db875243215f9fe28cd93590ee51a4022d2c898b688e24afa1"
   },
   "sourceFrames": {
     "frame-0000.png": "f0e5395c667218b013029d1a98ed267bec408cba90edacc5913369a8f50ebc36",
@@ -37,5 +39,6 @@
     "frame-0015.png": "209e276a8a2fcb0a5f4d547c80629ac6f886e75d9f05e9abeb2b381076d5f7f9",
     "frame-0016.png": "209e276a8a2fcb0a5f4d547c80629ac6f886e75d9f05e9abeb2b381076d5f7f9"
   },
-  "publicationSanitization": "Absolute native screen position removed from visual assessment; original media pixels and all timing/frame hashes are unchanged."
+  "publicationSanitization": "Absolute native screen position removed from visual assessment; original media pixels and all timing/frame hashes are unchanged.",
+  "inlinePreview": "Lossless animated PNG retaining all captured frames. Browser-safe11ms minimum delay is disclosed in preview-processing.json; exact-timing MP4 remains unchanged."
 }

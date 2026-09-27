@@ -2,13 +2,17 @@
 
 Review media for the animation-only PR in theol0403/OmniWM, code commit `322e400272a8a64fe8a2c3813d21102abc36ae6a`.
 
-These are ScreenCaptureKit recordings of the actual installed OmniWM Dev app on macOS. Only the native workspace-bar window is captured. There is no substitute UI, generated imagery, overlaid demo bar, simulated icon set, audio, or document content.
+These are ScreenCaptureKit recordings of the actual installed OmniWM Dev app. Only the native workspace-bar window is captured; there is no substitute UI, generated imagery, simulated icon set, audio, or document content.
 
-- **switching/workspace-bar.mp4**: normal workspace switches followed by rapid reversals. All 170 captured frames retain their original presentation timing.
-- **resizing/workspace-bar.mp4**: the native bar shrinks and recenters after quitting an empty temporary TextEdit window. This is a three-second excerpt (8.5–11.5 seconds) of a 30.027858-second capture. All 17 captured frames and all transition timing are preserved; only idle lead/tail is trimmed.
+- **Switching:** ordinary workspace changes and rapid reversals. The MP4 and new animated PNG both retain all 170 captured frames. The replaced GIF had only 42.
+- **Resizing:** the real bar shrinks and recenters when an empty temporary TextEdit window exits. The three-second MP4 excerpt retains all 17 captured frames, as does the new animated PNG; the replaced GIF had only 6. Only idle lead/tail was trimmed from the original 30.027858-second capture.
 
-GIFs are lower-cadence previews; use the MP4 files to review motion. Each fixed crop contains original panel pixels at the display's original pixel scale. Black outside the panel represents uncaptured pixels, and transparent pixels are composited for H.264. Recorded ScreenCaptureKit content scaling is reversed during encoding; no missing visual detail or intermediate frames are synthesized.
+`workspace-bar-preview.png` is the full-frame animated preview. It is lossless relative to the normalized actual capture pixels, and independent decoding verified every frame. It uses changed-pixel rectangles to reduce file size without removing frames or changing the resulting image. `preview-processing.json` records source hashes and frame timing; `preview-verification.json` records independent decoded checks.
 
-The recordings show actual behavior, not a renderer FPS measurement. ScreenCaptureKit omitted unchanged frames and also delivered uneven intervals during switching (up to 1.257 seconds); these gaps are preserved. The clips do not establish continuous 60/120fps smoothness.
+The previews use an 11ms minimum frame delay to avoid [Chromium's 100ms clamp for animated-image delays of 10ms or less](https://github.com/chromium/chromium/blob/main/third_party/blink/renderer/platform/graphics/deferred_image_decoder.cc#L301-L306). This adds 10.533ms across the entire switching preview and 1.917ms across resizing. No frames are synthesized, interpolated, or skipped. Longer source gaps are preserved. The original MP4s are unchanged and retain the exact source presentation timing; use them for timing review.
 
-The executable SHA256 is `3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695`. Sanitized provenance, per-frame timing/hashes, and independent decoded-video checks accompany each clip. Raw IPC data, document titles, desktop images, and global screen coordinates are not published. Earlier rejected synthetic demos and unsuccessful captures are excluded.
+The fixed crop contains actual panel pixels at the display's original scale. Black outside the panel represents uncaptured pixels. Recorded ScreenCaptureKit content scaling is reversed; missing detail is not reconstructed. Spatial resolution remains 1188×60 for switching and 1240×60 for resizing.
+
+These recordings demonstrate behavior, not a renderer FPS guarantee. Typical ordinary-transition capture intervals are about 18ms, but rapid switching has larger gaps. Viewer scheduling and background-tab throttling can also affect playback.
+
+The executable SHA256 is `3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695`. Provenance and original encoding checks accompany each clip. The original video manifest includes historical GIF-export statistics; current preview statistics are in preview-processing.json. Raw IPC data, document titles, desktop images, global screen coordinates, synthetic demos, and unsuccessful captures are excluded.

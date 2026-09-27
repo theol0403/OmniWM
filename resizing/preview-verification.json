@@ -1,0 +1,85 @@
+{
+  "method": "Independent Pillow APNG decoder; every full RGBA canvas compared byte for byte with its normalized real source PNG. CRC, APNG sequence, frame controls and original timing checked separately.",
+  "apngSHA256": "f6ac9762443c9738c09a82cb6943029749d920d7e78ce2bdd3911419298fe66d",
+  "decodedFrames": 17,
+  "allDecodedPixelsIdentical": true,
+  "maximumPresentationTimestampErrorSeconds": 0.0019166679896438499,
+  "deltaRectangles": true,
+  "durationErrorSeconds": 0.0019166675024155921,
+  "previewMinimumFrameDelayMilliseconds": 11.0,
+  "minimumDelayAddedSeconds": 0.0019166669822297984,
+  "maximumPreviewTimestampRoundingErrorSeconds": 1.3110701413410197e-09,
+  "durationRoundingErrorSeconds": 5.201856723147102e-10,
+  "timingRoundingErrorBoundSeconds": 2e-06,
+  "encodedDurationSeconds": 3.0019166675024156,
+  "decodedPixelHashes": [
+    {
+      "sourceFrame": "frame-0000.png",
+      "decodedRGBA_SHA256": "68644f9cd75b8da8f0343399259a8241b23fdef88d4fc220d46ff57e44724d33"
+    },
+    {
+      "sourceFrame": "frame-0001.png",
+      "decodedRGBA_SHA256": "9dd0838297512559aaebafc08cefc82f55475d8623f17b7903cb5f3def59e26c"
+    },
+    {
+      "sourceFrame": "frame-0002.png",
+      "decodedRGBA_SHA256": "446e16ff654c33a772214fbdd81b308fc54b65e7ab991ee7a16d29ad5289754c"
+    },
+    {
+      "sourceFrame": "frame-0003.png",
+      "decodedRGBA_SHA256": "980bffd6ca5cbd213c294b2a08cc65998cc91824cb63810e613830544dfda0f3"
+    },
+    {
+      "sourceFrame": "frame-0004.png",
+      "decodedRGBA_SHA256": "a37fc19446951f969b8e620532f2ddae5f2395466278c835850dfb2286bd42f7"
+    },
+    {
+      "sourceFrame": "frame-0005.png",
+      "decodedRGBA_SHA256": "a51bc58c2b348478805267237cb405988120facd5436d52ab9dfb601982911d2"
+    },
+    {
+      "sourceFrame": "frame-0006.png",
+      "decodedRGBA_SHA256": "2a23c0da0a1913e836142974f35f5299fc0e939a0ce974cd41e2bddd776ffd42"
+    },
+    {
+      "sourceFrame": "frame-0007.png",
+      "decodedRGBA_SHA256": "2a23c0da0a1913e836142974f35f5299fc0e939a0ce974cd41e2bddd776ffd42"
+    },
+    {
+      "sourceFrame": "frame-0008.png",
+      "decodedRGBA_SHA256": "fe2f871c27c502456f0ce7b4dc7d503d3470a87320d709f0e0ea9512a0806c85"
+    },
+    {
+      "sourceFrame": "frame-0009.png",
+      "decodedRGBA_SHA256": "b2d4307249dba56f6111604c84390dd58959d85368467db588788bf2c50d5539"
+    },
+    {
+      "sourceFrame": "frame-0010.png",
+      "decodedRGBA_SHA256": "22787b89051728221f81d040017043d6f7bee3236e554d8ab7446cb81fbfad0c"
+    },
+    {
+      "sourceFrame": "frame-0011.png",
+      "decodedRGBA_SHA256": "7cf555b4ba8a64f101da8e7ac0ac6cf70516a8287da6d2ad85575c6edc4773a4"
+    },
+    {
+      "sourceFrame": "frame-0012.png",
+      "decodedRGBA_SHA256": "89b181afa6b893648b3cbe8423e1ef513b0240ed771196d9b76c2406cd7e9876"
+    },
+    {
+      "sourceFrame": "frame-0013.png",
+      "decodedRGBA_SHA256": "2764a0b018dde35932f61a992e0a8e027ddff42b3f8e3894f9af6035fa680777"
+    },
+    {
+      "sourceFrame": "frame-0014.png",
+      "decodedRGBA_SHA256": "3c9429acfbc887536158f58fda1b2bea148563e85f4b04d30afc1d0581b4efee"
+    },
+    {
+      "sourceFrame": "frame-0015.png",
+      "decodedRGBA_SHA256": "0b7de79c9a2b5744ab112648b2ec9e91a9b18e4ac734039bfc34db920b5e0eaa"
+    },
+    {
+      "sourceFrame": "frame-0016.png",
+      "decodedRGBA_SHA256": "0b7de79c9a2b5744ab112648b2ec9e91a9b18e4ac734039bfc34db920b5e0eaa"
+    }
+  ]
+}

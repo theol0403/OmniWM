@@ -1,0 +1,356 @@
+{
+  "format": "APNG, all captured frames, lossless normalized pixels",
+  "sourceCommitFull": "322e400272a8a64fe8a2c3813d21102abc36ae6a",
+  "executableSHA256": "3660892b2c75b2b099ad1cf1a2e5ca67c4bcda01315fd2dfd89fbc0c7e342695",
+  "sourceManifestSHA256": "c58994949efa9129c48431563f5efea0640150e78e64dd8c14afc356e9cc539f",
+  "apngSHA256": "f6ac9762443c9738c09a82cb6943029749d920d7e78ce2bdd3911419298fe66d",
+  "sourceFrames": 17,
+  "apngFrames": 17,
+  "widthPixels": 1240,
+  "heightPixels": 60,
+  "sourceDurationSeconds": 3,
+  "apngDurationSeconds": 3.0019166675024156,
+  "durationErrorSeconds": 0.0019166675024155921,
+  "previewMinimumFrameDelayMilliseconds": 11.0,
+  "minimumDelayAddedSeconds": 0.0019166669822297984,
+  "minimumDelayAffectedFrames": 1,
+  "targetPreviewDurationSeconds": 3.00191666698223,
+  "durationRoundingErrorSeconds": 5.201856723147102e-10,
+  "maximumPresentationTimestampErrorSeconds": 0.0019166679896438499,
+  "maximumPreviewTimestampRoundingErrorSeconds": 1.3110701413410197e-09,
+  "maximumFrameDelayErrorSeconds": 0.0019166669822297984,
+  "sourceClipStartSeconds": 8.5,
+  "sourceClipEndSeconds": 11.5,
+  "initialFrameHeldFromBeforeTrimStart": true,
+  "captureEndpointEstimated": false,
+  "deltaRectangles": true,
+  "apngCompression": "Lossless changed-pixel rectangles from each normalized captured frame. Every composited full frame remains pixel-identical; identical consecutive captured samples remain distinct frames with one unchanged real pixel.",
+  "temporalProcessing": "Every captured sample retained, including identical consecutive images. Delays are close unsigned-16-bit rational representations. No decimation, inserted frames or interpolation. Browser preview only: source delays below11ms are extended to11ms to avoid Chromium's <=10ms-to100ms animated-image clamp. Original and adjusted intervals, affected frames and total extension are reported; original MP4 is unchanged.",
+  "spatialProcessing": "Fixed crop spanning recorded native panel bounds at original display pixel scale; per-frame contentScale is reversed when ScreenCaptureKit resized its fixed capture surface. No generated UI, labels, icons, or decoration. Black fills only unavailable pixels outside the captured window or transparent panel pixels.",
+  "limitations": "Source capture gaps are preserved. APNG playback may be scheduled or throttled by the viewer and does not prove production or browser render FPS. Losslessness is relative to the original-display-scale normalized frames before video/GIF compression.",
+  "frames": [
+    {
+      "sourceFrame": "frame-0000.png",
+      "sourceSHA256": "f0e5395c667218b013029d1a98ed267bec408cba90edacc5913369a8f50ebc36",
+      "normalizedPNG_SHA256": "853b5e469205eb2afcc634ba76386b61b2122ad2c658d7c595a190573c00584a",
+      "sourcePresentationSeconds": 0,
+      "apngPresentationSeconds": 0.0,
+      "targetPreviewPresentationSeconds": 0.0,
+      "encodedFrameRectanglePixels": {
+        "x": 0,
+        "y": 0,
+        "width": 1240,
+        "height": 60
+      },
+      "sourceDelaySeconds": 1.03206570900511,
+      "targetPreviewDelaySeconds": 1.03206570900511,
+      "delayNumerator": 44481,
+      "delayDenominator": 43099,
+      "encodedDelaySeconds": 1.0320657091811876
+    },
+    {
+      "sourceFrame": "frame-0001.png",
+      "sourceSHA256": "e7d3005ee87e23029932563f49dbe829d6d3148d08ea46bdff0f11124a68d00a",
+      "normalizedPNG_SHA256": "639cec9125e850bbd6713b0275625eb3e2a12b2b4651193b34c63e2503b7496c",
+      "sourcePresentationSeconds": 1.03206570900511,
+      "apngPresentationSeconds": 1.0320657091811876,
+      "targetPreviewPresentationSeconds": 1.03206570900511,
+      "encodedFrameRectanglePixels": {
+        "x": 236,
+        "y": 15,
+        "width": 10,
+        "height": 30
+      },
+      "sourceDelaySeconds": 0.01898783299839124,
+      "targetPreviewDelaySeconds": 0.01898783299839124,
+      "delayNumerator": 1222,
+      "delayDenominator": 64357,
+      "encodedDelaySeconds": 0.018987833491306307
+    },
+    {
+      "sourceFrame": "frame-0002.png",
+      "sourceSHA256": "630644c85c21e0da46b58ac9ee531a6545e899405a9d03e41124ac7e4bf603b9",
+      "normalizedPNG_SHA256": "a3b78b59437fee64e481cbac40c1fa9a75ee4f3be477eb6b6db5c3e9d2de1183",
+      "sourcePresentationSeconds": 1.0510535420035012,
+      "apngPresentationSeconds": 1.0510535426724938,
+      "targetPreviewPresentationSeconds": 1.0510535420035012,
+      "encodedFrameRectanglePixels": {
+        "x": 7,
+        "y": 0,
+        "width": 1233,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.018133082950953394,
+      "targetPreviewDelaySeconds": 0.018133082950953394,
+      "delayNumerator": 1123,
+      "delayDenominator": 61931,
+      "encodedDelaySeconds": 0.018133083593030955
+    },
+    {
+      "sourceFrame": "frame-0003.png",
+      "sourceSHA256": "f8680ef91dbff5fedc9980a5fd43f1645d62bcc00c0b51d1f0d083e4a99b3b07",
+      "normalizedPNG_SHA256": "e8f2a6cfabe90e425c53edc7990840c236bcfac017c8ef7fa432fdcdfdfc7d2e",
+      "sourcePresentationSeconds": 1.0691866249544546,
+      "apngPresentationSeconds": 1.0691866262655247,
+      "targetPreviewPresentationSeconds": 1.0691866249544546,
+      "encodedFrameRectanglePixels": {
+        "x": 0,
+        "y": 0,
+        "width": 1238,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.013973834051284939,
+      "targetPreviewDelaySeconds": 0.013973834051284939,
+      "delayNumerator": 706,
+      "delayDenominator": 50523,
+      "encodedDelaySeconds": 0.013973833699503196
+    },
+    {
+      "sourceFrame": "frame-0004.png",
+      "sourceSHA256": "94818fa4b4d993a6c1afeca3d7b1cb8d42921db20c0a8183928dc606f4fc2326",
+      "normalizedPNG_SHA256": "152b68619ab9332487db20b91de379ce102b72823d591c4b024fe903644923ec",
+      "sourcePresentationSeconds": 1.0831604590057395,
+      "apngPresentationSeconds": 1.083160459965028,
+      "targetPreviewPresentationSeconds": 1.0831604590057395,
+      "encodedFrameRectanglePixels": {
+        "x": 4,
+        "y": 0,
+        "width": 1232,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.03023333294549957,
+      "targetPreviewDelaySeconds": 0.03023333294549957,
+      "delayNumerator": 1906,
+      "delayDenominator": 63043,
+      "encodedDelaySeconds": 0.03023333280459369
+    },
+    {
+      "sourceFrame": "frame-0005.png",
+      "sourceSHA256": "87bef9ec4664037f763ae44a870dae7041a0e96b123892939b970b3a4d992720",
+      "normalizedPNG_SHA256": "bc5a88c7176b9c920d9839e981186d1232afba2fa8ec3fd52d8b84347cd4820a",
+      "sourcePresentationSeconds": 1.113393791951239,
+      "apngPresentationSeconds": 1.1133937927696216,
+      "targetPreviewPresentationSeconds": 1.113393791951239,
+      "encodedFrameRectanglePixels": {
+        "x": 8,
+        "y": 0,
+        "width": 1222,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.009083333017770201,
+      "targetPreviewDelaySeconds": 0.011,
+      "delayNumerator": 11,
+      "delayDenominator": 1000,
+      "encodedDelaySeconds": 0.011
+    },
+    {
+      "sourceFrame": "frame-0006.png",
+      "sourceSHA256": "a2f8ab88307407c51db9df004ac3c84e0d144f0bdf044f1b1a19d86abc82db02",
+      "normalizedPNG_SHA256": "80e76e3c80ee25afb277ef4fcd5ac8aef17ac1eb8d26e6b866b702ad545a13d7",
+      "sourcePresentationSeconds": 1.1224771249690093,
+      "apngPresentationSeconds": 1.1243937927696217,
+      "targetPreviewPresentationSeconds": 1.124393791951239,
+      "encodedFrameRectanglePixels": {
+        "x": 12,
+        "y": 0,
+        "width": 1214,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.01199279201682657,
+      "targetPreviewDelaySeconds": 0.01199279201682657,
+      "delayNumerator": 193,
+      "delayDenominator": 16093,
+      "encodedDelaySeconds": 0.011992791897098117
+    },
+    {
+      "sourceFrame": "frame-0007.png",
+      "sourceSHA256": "a2f8ab88307407c51db9df004ac3c84e0d144f0bdf044f1b1a19d86abc82db02",
+      "normalizedPNG_SHA256": "80e76e3c80ee25afb277ef4fcd5ac8aef17ac1eb8d26e6b866b702ad545a13d7",
+      "sourcePresentationSeconds": 1.1344699169858359,
+      "apngPresentationSeconds": 1.1363865846667198,
+      "targetPreviewPresentationSeconds": 1.1363865839680656,
+      "encodedFrameRectanglePixels": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      "sourceDelaySeconds": 0.015845916990656406,
+      "targetPreviewDelaySeconds": 0.015845916990656406,
+      "delayNumerator": 659,
+      "delayDenominator": 41588,
+      "encodedDelaySeconds": 0.01584591709146869
+    },
+    {
+      "sourceFrame": "frame-0008.png",
+      "sourceSHA256": "c3f0d70f8540b072570ad6b2a6d5f535af7c44bdb60a2d1d65be7de5f3f4ba76",
+      "normalizedPNG_SHA256": "7ad9056c575b24b6aee2110f22580af1ac98bc56e7a54d0177e61481f9b949f1",
+      "sourcePresentationSeconds": 1.1503158339764923,
+      "apngPresentationSeconds": 1.1522325017581885,
+      "targetPreviewPresentationSeconds": 1.152232500958722,
+      "encodedFrameRectanglePixels": {
+        "x": 20,
+        "y": 0,
+        "width": 1200,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.05010208301246166,
+      "targetPreviewDelaySeconds": 0.05010208301246166,
+      "delayNumerator": 2773,
+      "delayDenominator": 55347,
+      "encodedDelaySeconds": 0.05010208322040942
+    },
+    {
+      "sourceFrame": "frame-0009.png",
+      "sourceSHA256": "a8a826f75fe73b8332a1368a6bbb1f1821013cd7cff66554e8c77f826ca87a10",
+      "normalizedPNG_SHA256": "ddc0419cc45fdc05ab2d9feed3b511012715c1aae8df3f3beb9fb43b21ff309e",
+      "sourcePresentationSeconds": 1.200417916988954,
+      "apngPresentationSeconds": 1.2023345849785978,
+      "targetPreviewPresentationSeconds": 1.2023345839711836,
+      "encodedFrameRectanglePixels": {
+        "x": 22,
+        "y": 0,
+        "width": 1196,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.016486625012475997,
+      "targetPreviewDelaySeconds": 0.016486625012475997,
+      "delayNumerator": 612,
+      "delayDenominator": 37121,
+      "encodedDelaySeconds": 0.016486624821529593
+    },
+    {
+      "sourceFrame": "frame-0010.png",
+      "sourceSHA256": "1b5b4147a8bd50f385e7eb3c74efb20874f74473bec2e96a7bd73657f60b58e1",
+      "normalizedPNG_SHA256": "de697fcf41715f838babf55924bab5bf18dddf75b527c2f8fd7c5c095c4be5cc",
+      "sourcePresentationSeconds": 1.21690454200143,
+      "apngPresentationSeconds": 1.2188212098001274,
+      "targetPreviewPresentationSeconds": 1.2188212089836596,
+      "encodedFrameRectanglePixels": {
+        "x": 260,
+        "y": 4,
+        "width": 930,
+        "height": 52
+      },
+      "sourceDelaySeconds": 0.014056416985113174,
+      "targetPreviewDelaySeconds": 0.014056416985113174,
+      "delayNumerator": 881,
+      "delayDenominator": 62676,
+      "encodedDelaySeconds": 0.014056417129363712
+    },
+    {
+      "sourceFrame": "frame-0011.png",
+      "sourceSHA256": "a133a92555bd0e401053ef44cfe70839f7e920f4eb2fab93f200603fe696de28",
+      "normalizedPNG_SHA256": "0d4f7b8edc4b4cd0be3798db56024d433a82ee63ddf395e6c5094b512bbc608b",
+      "sourcePresentationSeconds": 1.2309609589865431,
+      "apngPresentationSeconds": 1.2328776269294912,
+      "targetPreviewPresentationSeconds": 1.2328776259687728,
+      "encodedFrameRectanglePixels": {
+        "x": 260,
+        "y": 3,
+        "width": 928,
+        "height": 54
+      },
+      "sourceDelaySeconds": 0.01875670801382512,
+      "targetPreviewDelaySeconds": 0.01875670801382512,
+      "delayNumerator": 1101,
+      "delayDenominator": 58699,
+      "encodedDelaySeconds": 0.0187567079507317
+    },
+    {
+      "sourceFrame": "frame-0012.png",
+      "sourceSHA256": "cbfa77af189467e0edea9b3d4f0ca68c5154047cb90637d57a49d26c4a40a48b",
+      "normalizedPNG_SHA256": "f45ab61399bf7407ee9401ee24c28f9996b14b5290e0f17b022d95fbfe19b956",
+      "sourcePresentationSeconds": 1.2497176670003682,
+      "apngPresentationSeconds": 1.2516343348802228,
+      "targetPreviewPresentationSeconds": 1.251634333982598,
+      "encodedFrameRectanglePixels": {
+        "x": 260,
+        "y": 3,
+        "width": 927,
+        "height": 54
+      },
+      "sourceDelaySeconds": 0.017381791956722736,
+      "targetPreviewDelaySeconds": 0.017381791956722736,
+      "delayNumerator": 143,
+      "delayDenominator": 8227,
+      "encodedDelaySeconds": 0.01738179166160204
+    },
+    {
+      "sourceFrame": "frame-0013.png",
+      "sourceSHA256": "8d120cabcf24c966aac1e0da32c69db59e3cf97152d4d5d9842cb753ea0c0483",
+      "normalizedPNG_SHA256": "befc20ba583f1bc8cd9c9bc0eb40bdfd1765cd5e78373f9adb5a639e0378db5d",
+      "sourcePresentationSeconds": 1.267099458957091,
+      "apngPresentationSeconds": 1.269016126541825,
+      "targetPreviewPresentationSeconds": 1.2690161259393207,
+      "encodedFrameRectanglePixels": {
+        "x": 31,
+        "y": 4,
+        "width": 1155,
+        "height": 52
+      },
+      "sourceDelaySeconds": 0.02868700004182756,
+      "targetPreviewDelaySeconds": 0.02868700004182756,
+      "delayNumerator": 617,
+      "delayDenominator": 21508,
+      "encodedDelaySeconds": 0.02868700018597731
+    },
+    {
+      "sourceFrame": "frame-0014.png",
+      "sourceSHA256": "295f66f7d76e57f5bbff2e9dd43b3f8627c4f1f38ea113a5598fd18f5e2bb3c4",
+      "normalizedPNG_SHA256": "b0442a81feb117aa67450a8ebc243e468a8923d0b6a261a7a820a05186ead473",
+      "sourcePresentationSeconds": 1.2957864589989185,
+      "apngPresentationSeconds": 1.2977031267278023,
+      "targetPreviewPresentationSeconds": 1.2977031259811482,
+      "encodedFrameRectanglePixels": {
+        "x": 24,
+        "y": 0,
+        "width": 1190,
+        "height": 60
+      },
+      "sourceDelaySeconds": 0.07018354098545387,
+      "targetPreviewDelaySeconds": 0.07018354098545387,
+      "delayNumerator": 4103,
+      "delayDenominator": 58461,
+      "encodedDelaySeconds": 0.07018354116419494
+    },
+    {
+      "sourceFrame": "frame-0015.png",
+      "sourceSHA256": "209e276a8a2fcb0a5f4d547c80629ac6f886e75d9f05e9abeb2b381076d5f7f9",
+      "normalizedPNG_SHA256": "185d45743331f463ca9728aea600de81d8e86209f8b971ec69bfc9546f8b3aef",
+      "sourcePresentationSeconds": 1.3659699999843724,
+      "apngPresentationSeconds": 1.3678866678919972,
+      "targetPreviewPresentationSeconds": 1.367886666966602,
+      "encodedFrameRectanglePixels": {
+        "x": 262,
+        "y": 10,
+        "width": 40,
+        "height": 40
+      },
+      "sourceDelaySeconds": 0.0665575839811936,
+      "targetPreviewDelaySeconds": 0.0665575839811936,
+      "delayNumerator": 3905,
+      "delayDenominator": 58671,
+      "encodedDelaySeconds": 0.06655758381483186
+    },
+    {
+      "sourceFrame": "frame-0016.png",
+      "sourceSHA256": "209e276a8a2fcb0a5f4d547c80629ac6f886e75d9f05e9abeb2b381076d5f7f9",
+      "normalizedPNG_SHA256": "185d45743331f463ca9728aea600de81d8e86209f8b971ec69bfc9546f8b3aef",
+      "sourcePresentationSeconds": 1.432527583965566,
+      "apngPresentationSeconds": 1.434444251706829,
+      "targetPreviewPresentationSeconds": 1.4344442509477957,
+      "encodedFrameRectanglePixels": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      },
+      "sourceDelaySeconds": 1.567472416034434,
+      "targetPreviewDelaySeconds": 1.567472416034434,
+      "delayNumerator": 43187,
+      "delayDenominator": 27552,
+      "encodedDelaySeconds": 1.5674724157955866
+    }
+  ]
+}
